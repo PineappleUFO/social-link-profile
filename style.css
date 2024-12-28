@@ -43,8 +43,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5em;
+    padding: 2.5em;
     border-radius: 0.6em;
+    width: 40%;
+    min-width: 20em;
+    max-width: 30em;
 }
 
 .card-container img{
@@ -55,29 +58,30 @@ body{
 .card-container h1{
     font-size: 26px;
     font-weight: 400;
-    margin: 0.8em 0;
+    margin: 1em 0 0.5em 0;
     
 }
 .card-container p:first-of-type {
     color: var(--green);
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 1em 0;
+    
 }
 .links-container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 
 .links-container a {
     background-color: var(--grey700);
-    margin: 0.4em 0;
+    margin: 0.5em 0;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
     color:var(--white);
-    padding: 0.8em;
+    padding: 1em;
     border-radius: 0.4em;
 }
 .links-container a:hover {
@@ -101,5 +105,11 @@ body{
 @media (max-height:40em){
     .attribution{
         display: none;
+    }
+}
+
+@media (max-width:40em) {
+    .card-container{
+        padding: 1.5em;
     }
 }
